@@ -12,7 +12,6 @@ const Contact = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '20px',
         position: 'relative',
         zIndex: 1,
         width: '100%',

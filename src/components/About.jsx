@@ -16,7 +16,7 @@ export const sectionHeadingStyle = {
 
 const About = () => {
   return (
-    <div style={{ paddingTop: '20px', paddingBottom: '20px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 20px', boxSizing: 'border-box' }}>
+    <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
       {/* About Heading */}
       <div style={{...sectionHeadingStyle, marginBottom: '40px'}} className="section-heading">
         {"About Me"}

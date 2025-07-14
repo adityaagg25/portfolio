@@ -30,7 +30,7 @@ const Skills = () => {
   `;
 
   return (
-    <div className="skills-container" style={{ textAlign: 'center', minHeight: 'auto', padding: '20px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
+    <div className="skills-container" style={{ textAlign: 'center', minHeight: 'auto', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', boxSizing: 'border-box' }}>
       <div dangerouslySetInnerHTML={{ __html: certificateStyles }} />
       <div style={{...sectionHeadingStyle, marginBottom: '40px'}} className="section-heading">
               {"Skills"}

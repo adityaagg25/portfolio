@@ -68,7 +68,6 @@ const Experience = () => {
 				display: 'flex',
 				flexDirection: 'column',
 				alignItems: 'center',
-				padding: '20px',
 				boxSizing: 'border-box',
 			}}
 		>
@@ -218,6 +217,8 @@ const Experience = () => {
 					width: '100%',
 					padding: '0 5px',
 					boxSizing: 'border-box',
+					flexDirection: 'column',
+					gap: '15px',
 				}}
 			>
 				{timelineData.map((item, idx) => (
@@ -229,7 +230,7 @@ const Experience = () => {
 							border: `2px solid ${item.border}`,
 							borderRadius: '12px',
 							boxShadow: `0 0 10px ${item.border}40`,
-							padding: '6px 12px 12px 12px', // top padding reduced to 6px, others remain 12px
+							padding: '20px 16px 16px 16px',
 							marginBottom: '12px',
 							color: '#fff',
 							textAlign: 'left',
@@ -239,60 +240,40 @@ const Experience = () => {
 							position: 'relative',
 						}}
 					>
-						{/* Mobile icon badge */}
-						<div
+						<h3
 							style={{
-								position: 'absolute',
-								top: '-8px',
-								left: '12px',
-								width: '32px',
-								height: '32px',
-								background: item.bg,
-								border: `2px solid ${item.border}`,
-								borderRadius: '50%',
-								boxShadow: `0 0 6px ${item.border}`,
+								fontSize: '1.1rem',
+								marginBottom: '8px',
+								color: item.color,
+								textShadow: `0 0 8px ${item.color}`,
+								fontWeight: 700,
 								display: 'flex',
 								alignItems: 'center',
-								justifyContent: 'center',
-								fontSize: '1rem',
-								color: item.color,
+								gap: '8px',
+								lineHeight: '1.3',
 							}}
 						>
-							{item.icon}
+							{item.icon} {item.title}
+						</h3>
+						<div
+							style={{
+								color: item.color,
+								fontWeight: 600,
+								fontSize: '0.85rem',
+								marginBottom: '6px',
+							}}
+						>
+							{item.date}
 						</div>
-
-						<div style={{ marginTop: '10px' }}>
-							<h3
-								style={{
-									fontSize: '1.05rem',
-									marginBottom: '4px',
-									color: item.color,
-									textShadow: `0 0 8px ${item.color}`,
-									fontWeight: 700,
-								}}
-							>
-								{item.title}
-							</h3>
-							<div
-								style={{
-									color: item.color,
-									fontWeight: 600,
-									fontSize: '0.8rem',
-									marginBottom: '4px',
-								}}
-							>
-								{item.date}
-							</div>
-							<div
-								style={{
-									fontWeight: 700,
-									margin: '4px 0 8px 0',
-									color: '#fff',
-									fontSize: '0.95rem',
-								}}
-							>
-								{item.org}
-							</div>
+						<div
+							style={{
+								fontWeight: 700,
+								margin: '6px 0 0 0',
+								color: '#fff',
+								fontSize: '1rem',
+							}}
+						>
+							{item.org}
 						</div>
 					</div>
 				))}
