@@ -3,7 +3,6 @@ import { sectionHeadingStyle } from './About';
 
 const cardStyle = {
   maxWidth: '550px',
-  minHeight: '520px',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-start',
@@ -46,7 +45,7 @@ const Projects = () => {
             background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
             border: '2px solid #00ffff',
             boxShadow: '0 0 14px #00ffff33',
-            padding: '32px 32px 24px 32px'
+            padding: '24px 24px 20px 24px'
           }}
           className="project-card"
         >
@@ -63,24 +62,6 @@ const Projects = () => {
           >
             SoberPath- A Digital Rehab Assistant
           </div>
-          <div
-            style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontSize: '1.08rem',
-              color: '#e0e0e0',
-              marginBottom: '18px',
-              lineHeight: 1.7
-            }}
-          >
-            A comprehensive digital rehabilitation assistant system that enables real-time tracking of patient vitals, recovery progress, and automated alerts to optimize care delivery.
-          </div>
-          <div style={{ fontWeight: 700, color: '#00ffff', marginBottom: '8px' }}>Key Features:</div>
-          <ul style={{ marginTop: 0, marginBottom: '18px', color: '#baffff', fontSize: '1rem', lineHeight: 1.6 }}>
-            <li>Real-time patient monitoring system</li>
-            <li>AI-driven analytics for recovery tracking</li>
-            <li>Reward-based engagement system</li>
-            <li>Cloud-based scalable architecture</li>
-          </ul>
           <div style={{ fontWeight: 700, color: '#00ffff', marginBottom: '8px' }}>Tech Stack:</div>
           <div style={{ marginTop: '0', marginBottom: '10px' }}>
             <span className="tech-badge tech-green">MongoDB</span>
@@ -106,7 +87,7 @@ const Projects = () => {
             background: 'linear-gradient(120deg, #1a002a 60%, #330033 80%, #ff00ff 120%)',
             border: '2px solid #ff00ff',
             boxShadow: '0 0 14px #ff00ff33',
-            padding: '32px 32px 24px 32px'
+            padding: '24px 24px 20px 24px'
           }}
           className="project-card"
         >
@@ -123,24 +104,6 @@ const Projects = () => {
           >
             Research Paper Conference Platform
           </div>
-          <div
-            style={{
-              fontFamily: "'Share Tech Mono', monospace",
-              fontSize: '1.08rem',
-              color: '#e0e0e0',
-              marginBottom: '18px',
-              lineHeight: 1.7
-            }}
-          >
-            Developed a comprehensive frontend website for MIT Manipal's ARIIA-24 conference, facilitating research paper publication under IEEE standards.
-          </div>
-          <div style={{ fontWeight: 700, color: '#ff00ff', marginBottom: '8px' }}>Key Achievements:</div>
-          <ul style={{ marginTop: 0, marginBottom: '18px', color: '#baffff', fontSize: '1rem', lineHeight: 1.6 }}>
-            <li>Collaborated with University of Warwick & Malta speakers</li>
-            <li>Hosted successful industry conference</li>
-            <li>Attracted 300+ attendees</li>
-            <li>IEEE standard compliance</li>
-          </ul>
           <div style={{ fontWeight: 700, color: '#ff00ff', marginBottom: '8px' }}>Tech Stack:</div>
           <div style={{ marginTop: '0', marginBottom: '10px' }}>
             <span className="tech-badge tech-orange">HTML5</span>

@@ -25,18 +25,18 @@ const Contact = () => {
       <div style={{
         display: 'flex',
         gap: '40px',
-        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'flex-start',
         width: '100%',
         maxWidth: '1200px',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        marginBottom: '20px'
       }}
       >
       {/* Left: Send Message Card */}
       <div
         style={{
-          flex: '1 1 420px',
+          flex: '1 1 450px',
           minWidth: '300px',
           maxWidth: '500px',
           background: 'rgba(0, 20, 40, 0.95)',
@@ -82,7 +82,7 @@ const Contact = () => {
       {/* Right: Get in Touch & Socials */}
       <div
         style={{
-          flex: '1 1 420px',
+          flex: '1 1 450px',
           minWidth: '300px',
           maxWidth: '500px',
           display: 'flex',
@@ -100,9 +100,9 @@ const Contact = () => {
             borderRadius: '18px',
             boxShadow: '0 0 14px #39ff14a0',
             padding: '28px 28px 18px 28px',
-            marginBottom: '25px',
+            marginBottom: '5px',
             color: '#fff',
-            marginTop: 0,
+            marginTop: '50px',
           }}
         >
           <h2 className="neon-green-text" style={{ marginBottom: '18px', fontSize: '1.5rem', textAlign: 'center',  }}>
@@ -124,24 +124,20 @@ const Contact = () => {
           </div>
           <div style={{ marginLeft: 28, color: '#eafffa' }}>adityaagg25@gmail.com</div>
         </div>
-        {/* Socials Card */}
-        <div
-          className="card"
-          style={{
-            background: 'linear-gradient(120deg, #001a1f 60%, #004d66 80%, #00f0ff 120%)',
-            border: '2px solid #00fff7',
-            borderRadius: '18px',
-            boxShadow: '0 0 14px #00fff7a0',
-            padding: '24px 24px 18px 24px',
-            marginBottom: '0',
-            color: '#fff',
-            textAlign: 'center',
-          }}
-        >
-          <h2 className="neon-text" style={{ fontSize: '1.3rem', marginBottom: '18px', textShadow: '0 0 8px #00fff7' }}>
-            Connect With Me
-          </h2>
-          <div className="social-icons" style={{ justifyContent: 'center', gap: '24px', marginTop: 0 }}>
+        
+        {/* Terminal Card */}
+        <div style={{ marginTop: '10px' }}>
+          <TerminalWindow titleBarColor="green">
+            {`$ node server.js
+Server running on port 3000
+$ npm start
+Application ready!
+`}
+          </TerminalWindow>
+        </div>  
+      </div>
+    </div>
+    <div className="social-icons" style={{ justifyContent: 'center', gap: '24px', marginTop: 0 }}>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ color: '#00fff7', fontSize: '2rem' }}>
               <FaLinkedin />
             </a>
@@ -155,21 +151,6 @@ const Contact = () => {
               <FaInstagram />
             </a>
           </div>
-        </div>
-        {/* Terminal Card */}
-        <div style={{ marginTop: '10px' }}>
-          <TerminalWindow titleBarColor="green">
-            {`$ whoami
-Aditya Aggarwal
-$ status
-Available for opportunities
-$ location
-Punjab, India
-`}
-          </TerminalWindow>
-        </div>
-      </div>
-    </div>
     </div>
   );
 };

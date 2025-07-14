@@ -69,19 +69,19 @@ const Home = () => {
             </button>
           </div>
           
-          <div className="social-icons">
-            {/* Social links can be added here */}
-          </div>
+          
         </div>
 
         {/* Right: Terminal + cards */}
         <div className="home-right">
           <div className="terminal-section">
             <TerminalWindow titleBarColor="green">
-              {`$ node server.js
-Server running on port 3000
-$ npm start
-Application ready!
+              {`$ whoami
+Aditya Aggarwal
+$ status
+Available for opportunities
+$ location
+Punjab, India
 `}
             </TerminalWindow>
           </div>
