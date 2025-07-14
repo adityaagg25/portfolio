@@ -93,12 +93,12 @@ const Contact = () => {
       >
         {/* Get in Touch Card */}
         <div
-          className="card green"
+          className="card orange"
           style={{
-            background: 'linear-gradient(120deg, #002a1a 60%, #003300 80%, #00ff99 120%)',
-            border: '2px solid #39ff14',
+            background: 'linear-gradient(120deg, #2a1400 60%, #331a00 80%, #ff6600 120%)',
+            border: '2px solid #ff6600',
             borderRadius: '18px',
-            boxShadow: '0 0 14px #39ff14a0',
+            boxShadow: '0 0 14px #ff6600a0',
             padding: '28px 28px 18px 28px',
             marginBottom: '5px',
             color: '#fff',
@@ -137,7 +137,7 @@ Application ready!
         </div>  
       </div>
     </div>
-    <div className="social-icons" style={{ justifyContent: 'center', gap: '24px', marginTop: 0 }}>
+    <div className="social-icons" style={{ justifyContent: 'center', gap: '24px', marginTop: '40px' }}>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ color: '#00fff7', fontSize: '2rem' }}>
               <FaLinkedin />
             </a>
